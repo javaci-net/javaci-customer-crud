@@ -31,7 +31,7 @@ build/
 .vscode/
 
 ### Node & Angular & Javascript ###
-.node_module
-/node_module
-/*/node_module
-/angular/node_module
+.node_modules
+/node_modules
+/*/node_modules
+/angular/app/node_modules

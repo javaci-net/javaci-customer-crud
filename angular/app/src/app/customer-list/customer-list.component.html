@@ -1,0 +1,31 @@
+<table class="table table-striped">
+
+  <thead>
+  <tr>
+    <th>#</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let customer of customers">
+    <td>{{customer.id}}</td>
+    <td>{{customer.name}}</td>
+    <td>{{customer.lastName}}</td>
+    <td>
+      <button [routerLink]="['/customer/edit',customer.id]" [queryParams]="customer" class="btn btn-sm btn-secondary mr-1">Edit</button>
+      <button (click)="delete(customer,deleteTemplate)" class="btn btn-sm btn-danger">Delete</button>
+    </td>
+  </tr>
+  </tbody>
+
+</table>
+
+<ng-template #deleteTemplate>
+  <div class="modal-body text-center">
+    <p>Do you want to delete customer : {{selectedCustomer?.name}} {{selectedCustomer?.lastName}}?</p>
+    <button type="button" class="btn btn-default mr-1" (click)="confirmDelete()" >Yes</button>
+    <button type="button" class="btn btn-primary" (click)="cancelDelete()" >No</button>
+  </div>
+</ng-template>
