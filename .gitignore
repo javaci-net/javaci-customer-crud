@@ -29,3 +29,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Node & Angular & Javascript ###
+.node_module
+/node_module
+/*/node_module
+/angular/node_module
