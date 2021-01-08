@@ -1,4 +1,4 @@
-package net.javaci.customerCrud.model;
+package net.javaci.customerCrud;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

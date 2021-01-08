@@ -1,4 +1,4 @@
-package net.javaci.customerCrud.api;
+package net.javaci.customerCrud;
 
 import java.util.List;
 
@@ -6,9 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-
-import net.javaci.customerCrud.dao.CustomerDao;
-import net.javaci.customerCrud.model.Customer;
 
 @CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
