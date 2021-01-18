@@ -7,7 +7,7 @@ Uses H2 db by default
 http://localhost:8080/swagger-ui.html#/
 
 
-## Thymleaf 
+## Thymeleaf 
 
 http://localhost:8080/customer/list
 http://localhost:8080/customer/add
